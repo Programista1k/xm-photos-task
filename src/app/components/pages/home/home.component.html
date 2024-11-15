@@ -1,0 +1,6 @@
+<div class="flex w-full items-center p-5 gap-5 flex-wrap">
+  <app-picture class="w-full md:w-[48%] lg:w-[calc(25%-20px)]" pictureUrl="test" *ngFor="let x of [].constructor(picturesLimit())"></app-picture>
+  <div class="flex w-full items-center justify-center my-5" #loadMore *ngIf="picturesLimit() >= 12">
+    <mat-icon class="text-[40px] !w-10 !h-10 text-2xl animate-bounce">keyboard_double_arrow_down</mat-icon>
+  </div>
+</div>
